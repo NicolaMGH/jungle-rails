@@ -1,0 +1,20 @@
+Hello, Customer!
+
+Thanks for your order. Here is the total and each item in your order.
+
+===============================================
+
+
+<% @order.line_items.each do |line_item| %>
+      <% if product = Product.find_by(id: line_item.product_id) %>
+
+           >Item: <%= product.name %>
+
+           Quantity: <%= line_item.quantity %>
+
+           Total: <%= line_item.item_price_cents * line_item.quantity / 100.0 %>
+
+
+      <% end %>
+    <% end %>
+    TOTAL PRICE: <%= @order.total_cents / 100.0 %>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hello, Customer!</h1>
+    <p>
+      Thanks for your order. Here is everything you ordered with the total price.<br>
+    </p>
+
+    <% @order.line_items.each do |line_item| %>
+      <% if product = Product.find_by(id: line_item.product_id) %>
+        <div>
+           <p><strong>Item: </strong><%= product.name %></p>
+           <p><img style="width:30%; height:35%;"src="<%= product.image %>"></p>
+           <p><strong>Quantity:</strong> <%= line_item.quantity %></p>
+           <p><strong>Total:</strong> <%= line_item.item_price_cents * line_item.quantity / 100.0 %></p>
+           <hr>
+        </div>
+      <% end %>
+    <% end %>
+    <p><strong>TOTAL PRICE:</strong> <%= @order.total_cents / 100.0 %></p>
+
+  </body>
+</html>
