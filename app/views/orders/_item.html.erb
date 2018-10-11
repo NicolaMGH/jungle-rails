@@ -10,13 +10,13 @@
       <p><%= product.description %></p>
     </td>
     <td>
-      <%= product.price %>
+      <%= line_item_price / 100.0 %>
     </td>
     <td>
       <%= quantity %>
     </td>
     <td>
-      <%= product.price * quantity %>
+      <%= total_items_price / 100.0 %>
     </td>
   </tr>
 <% end %>

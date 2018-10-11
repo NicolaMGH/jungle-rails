@@ -10,7 +10,7 @@
   </div>
 
   <div class="panel panel-default items">
-    <table class="table table-bordered">
+    <table class="table table-bordered table-hover">
       <thead>
         <tr>
           <th colspan="2">Product</th>
@@ -21,7 +21,8 @@
       </thead>
       <tbody>
         <% @order.line_items.each do |line_item| %>
-          <%= render 'item', product_id: line_item.product_id, quantity: line_item.quantity %>
+          <%= render 'item', product_id: line_item.product_id, quantity: line_item.quantity,
+          line_item_price: line_item.item_price_cents, total_items_price: line_item.total_price_cents %>
         <% end %>
       </tbody>
       <tfoot>
@@ -30,7 +31,7 @@
           <th><%= @order.total_cents / 100.0 %></th>
         </tr>
         <tr>
-          <th colspan="4"><strong>EMAIL USED:</strong></th>
+          <th colspan="4">EMAIL USED:</th>
           <th><%= @order.email %></th>
         </tr>
       </tfoot>
