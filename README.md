@@ -27,6 +27,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Admin - add and remove categories
 - User - register and login
 - User - create and delete own review
+- User - create and delete own review
 - User - view reviews left by others
 - User - checkout with items in cart
 - User - see details about an product
