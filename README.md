@@ -21,6 +21,16 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
+### Features
+
+- Admin - add and remove products
+- Admin - add and remove categories
+- User - register and login
+- User - create and delete own review 
+- User - view reviews left by others
+- User - checkout with items in cart
+- User - see details about an product
+
 ### Final Product
 
 !["home-page"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/home-page.png)
