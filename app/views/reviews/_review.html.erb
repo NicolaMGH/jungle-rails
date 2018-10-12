@@ -1,0 +1,17 @@
+<% user = User.find_by(id: review[:user_id]) %>
+
+<tr>
+  <td><%= "#{user.first_name} #{user.last_name}" %></td>
+  <td><%= review.description %></td>
+  <td>
+    <% review.rating.times do %>
+      <span class="fa fa-star checked"></span>
+    <% end %>
+    <% (5 - review.rating).times do %>
+      <span class="fa fa-star"></span>
+    <% end %>
+    <% if current_user && current_user.id == review.user_id %>
+      <dd><%= link_to "Delete", product_review_path(@product, review), class: "btn btn-xs btn-danger", :method => :delete %></dd>
+    <% end %>
+  </td>
+</tr>
