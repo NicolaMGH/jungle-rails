@@ -6,7 +6,7 @@ class Review < ActiveRecord::Base
   validates! :user_id, presence: true
   validates! :description, presence: true
   validates! :rating, presence: true
-  validates_numericality_of! :rating, only_integer: true
+  validates! :rating, numericality: { only_integer: true }
   validates! :rating, inclusion: { in: 1..5 }
 
 
