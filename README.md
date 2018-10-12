@@ -1,10 +1,10 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2.
 
 
 ## Setup
-
+```
 1. Fork & Clone
 2. Run `bundle install` to install dependencies
 3. Create `config/database.yml` by copying `config/database.example.yml`
@@ -14,12 +14,21 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 7. Sign up for a Stripe account
 8. Put Stripe (test) keys into appropriate .env vars
 9. Run `bin/rails s -b 0.0.0.0` to start the server
-
+```
 ## Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
+
+### Final Product
+
+!["home-page"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/home-page.png)
+!["reviews"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/reviews.png)
+!["admin-products"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/admin-products.png)
+!["admin-categories"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/admin-categories.png)
+!["register"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/register.png)
+!["login"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/login.png)
 
 ## Dependencies
 
