@@ -24,10 +24,11 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
-### Features
+### Features Added
 
 - Admin - add and remove products
 - Admin - add and remove categories
+- Admin - basic http access authentication
 - User - register and login
 - User - create and delete own review
 - User - create and delete own review
