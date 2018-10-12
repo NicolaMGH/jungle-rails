@@ -31,6 +31,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - User - view reviews left by others
 - User - checkout with items in cart
 - User - see details about an product
+- User - emailed a receipt upon order completion
 
 ### Final Product
 
@@ -40,6 +41,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 !["admin-categories"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/admin-categories.png)
 !["register"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/register.png)
 !["login"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/login.png)
+!["my-cart"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/my-cart.png)
+!["orders"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/orders.png)
+!["email"](https://github.com/NicolaMGH/jungle-rails/blob/master/docs/email.png)
 
 ## Dependencies
 
