@@ -9,7 +9,7 @@ RSpec.describe Product, type: :model do
 
   describe 'Validations' do
     # validation tests/examples here
-    it 'should save successfully with all validations' do
+    it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end
 
